@@ -1,0 +1,58 @@
+body{
+    overflow: hidden;
+    color: #505962;
+    font-family: 'Roboto condensed', sans-serif;
+}
+.mynav{
+    background:#fff!important;
+}
+.mynav a{
+    margin-right: 30px;
+    color:orangered;
+    border-bottom: 3px solid transparent;
+}
+.mynav a:hover{
+    border-bottom: 3px solid orange;
+}
+
+.navbar-brand img{
+    height: 2em;
+
+}
+.drk:after {
+    content:"";
+    display:block;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background:#000;
+    opacity:0.5;
+}
+
+.ccd {
+    background: rgba(0,0,0,0.6);
+}
+.trn {
+    background: transparent !important;
+    z-index:999;
+}
+
+.trn a {
+    margin-right: 30px;
+    color:#fff!important;
+    border-bottom: 2px solid transparent;
+}
+
+.trn a:hover {
+    border-bottom: 3px solid orangered !important;
+}
+
+.hactive a {
+    border-bottom: 2px solid #fff;
+}
+
+.bd-example {
+    margin-top: -102px;
+}
