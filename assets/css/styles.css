@@ -398,6 +398,54 @@ body {
 }
 
 /*---------more feature section --------------*/
-.more-feature .title .sub-heading p h2{
+.more-feature{
+    padding: 100px 0px;
+}
+.more-feature .title h2{
+    color: black;
+}
+.more-feature .sub-heading p{
+    color: grey;
+}
+.feature-list ul{
+    list-style: none;
+    padding-left: 100px;
+}
+.feature-list li{
+    position: relative;
+    margin-bottom: 30px;
+    padding-left: 80px;
+}
+.feature-list li:hover i{
     color:white;
+    background-color:plum;
+    transition: 0.5s ease;
+    -webkit-transition: .5s ease-in;
+    -moz-transition: .5s ease-in;
+    -o-transition: .5s ease-in;
+    -ms-transition: .5s ease-in;
+}
+.more-feature-icon{
+    position: absolute;
+    left:0
+}
+.more-feature-icon i{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 30px;
+    background: white;
+    color: plum;
+    border-radius: 50%;
+    border: 2px solid plum;
+    line-height: 50px;
+}
+.feature-details h3{
+    color: purple;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.feature-details p{
+    color: #616161;
+    font-weight: 200
 }
