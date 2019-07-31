@@ -2,6 +2,7 @@
 body {
     font-family: "Raleway";
 }
+/* ------ header carousel -----------*/
 .carousel .carousel-item {
     transition-duration: 1.5s;
 }
@@ -13,7 +14,22 @@ body {
     box-shadow: 0px 0px 17px 0px;
     transition: all 0.5s
 }
+.image-banner{
+    height: 700px;
+    width: 100%;
+}
+.overlay{
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0,0.9);
+    opacity: 0.3;
+    transition: all 0.2s ease-out;
+}
 
+/*---------Navigation section---------*/
 .nav-link , .navbar-brand{ color: #f4f4f4; cursor: pointer;}
 
 .nav-link{ margin-right: 1em !important;}
@@ -26,197 +42,8 @@ body {
 .navbar-collapse{
     justify-content: flex-end;
    }
-.bg-dark{
-    background-color:#343a40!important
-}
-.bg-primary{
-    background-color:#007bff!important
-    }
-.overlay{
-    position: absolute;
-    min-height: 100%;
-    min-width: 100%;
-    left: 0;
-    top: 0;
-    background: #000;
-    opacity: 0.3;
-    transition: all 0.2s ease-out;
-}
-/*----- carousel slidder ----*/
-.carousel slide{
-    height: 500px;
-    width: 100vh;
-    color:white;
-    text-align: center;
-}
-.carousel-caption {
-    position: absolute;
-    top: 20%;
-    margin: auto;
-    padding: 2em;
-}
-.carousel-caption h5{
-    color:#F97300 ;
-    font-size: 70px;
-    line-height: 1.5;
-}
-.carousel-caption p{
-    color:white;
-    font-size: 30px;
-    width: 50%;
-    line-height: 1.5;
-   }
-.carousel-caption a{
-       padding: 10px 40px;
-       margin-right: 10px;
-     
-}
-.carousel-caption a.btn-orange{
-    background-color: #F97300;
-    color:white;
-    transition: 0.5s ease-in;
-}
-.carousel-caption a.btn-orange:hover{
-    opacity:0.9;
-    background-color: darkblue;
-}
-.carousel-caption a.btn-blue{
-    background-color: deepskyblue;
-    color:white;
-    transition: 0.5s ease-in;
-}
-.carousel-caption a.btn-blue:hover{
-    opacity:0.9;
-    background-color: darkblue;
-}
-.img2{
-    background-image:linear-gradient(rgba(0,0,0,0.7),(0,0,0,0.7)),url(assets/Images/microloans.jpg);
-    background-size: 100% 100%;
-}
-.carousel-caption i{
-    font-size: 80px;
-    margin-right: 20px;
-}
 
-
-
-/* ---about us section ----*/
-.description{
-    position: absolute;
-    top: 30%;
-    margin: auto;
-    padding: 2em;
-    
-}
-.description h1{
- color:#F97300 ;
-}
-.description p{
- color:#666;
- font-size: 20px;
- width: 50%;
- line-height: 1.5;
-}
-.description button{
- border:1px  solid #F97300;
- background:#F97300;
- color:#fff;
-}
-.about{
-    margin: 4em 0;
-    padding: 1em;
-    position: relative;
-   }
-   .about h1{
-    color:#F97300;
-    margin: 2em;
-   }
-   .about img{
-    height: 100%;
-       width: 100%;
-       border-radius: 50%
-   }
-   .about span{
-    display: block;
-    color: #888;
-    position: absolute;
-    left: 115px;
-   }
-   .about .desc{
-    padding: 2em;
-    border-left:4px solid #10828C;
-   }
-   .about .desc h3{
-    color: #10828C;
-   }
-   .about .desc p{
-    line-height:2;
-    color:#888;
-   }
-   .portfolio{
-    margin: 4em 0;
-       position: relative; 
-   }
-   .portfolio h1{
-    color:#F97300;
-    margin: 2em; 
-   }
-   .portfolio img{
-     height: 15rem;
-     width: 100%;
-     margin: 1em;
-     
-   }
-   .blog{
-    margin: 4em 0;
-    position: relative; 
-   }
-   .blog h1{
-    color:#F97300;
-    margin: 2em; 
-   }
-   .blog .card{
-    box-shadow: 0 0 20px #ccc;
-   }
-   .blog .card img{
-    width: 100%;
-    height: 12em;
-   }
-   .blog .card-title{
-    color:#F97300;
-     
-   }
-   .blog .card-body{
-    padding: 1em;
-   }
-   .team{
-    margin: 4em 0;
-    position: relative;  
-   }
-   .team h1{
-    color:#F97300;
-    margin: 2em; 
-   }
-   .team .item{
-    position: relative;
-   }
-   .team .des{
-    background: #F97300;
-    color: #fff;
-    text-align: center;
-    border-bottom-left-radius: 93%;
-    transition:.3s ease-in-out;
-    
-   }
-   .team .item:hover .des{
-    height: 100%;
-    background:#f973007d;
-    position: absolute;
-    width: 89%;
-    padding: 5em;
-    top: 0;
-    border-bottom-left-radius: 0;
-   }
+/* ---our focus area section ----*/
    .sub-heading{
        position: relative;
        margin-bottom:75px;
@@ -316,9 +143,9 @@ body {
 
 /*--------why do we exit section--------*/
 .feature-area{
-    margin-top:100px;
     padding: 100px 0px;
-    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(/assets/image/blacks.jpg);
+    margin-top: -10px;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(/assets/image/parallax/parallax3.jpg);
     background-size: cover;
     background-position:center;
     background-attachment: fixed;
@@ -400,6 +227,7 @@ body {
 /*---------more feature section --------------*/
 .more-feature{
     padding: 100px 0px;
+    margin-top: -40px;
 }
 .more-feature .title h2{
     color: black;
@@ -448,4 +276,76 @@ body {
 .feature-details p{
     color: #616161;
     font-weight: 200
+}
+
+/* ------------- Testimonals Sildder Section -----------*/
+.testimonals{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("/assets/image/parallax/parallax2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 50px;
+    padding-bottom: 80px;
+    margin-top: -100px;
+}
+.testimonals .carousel-indicators{
+    bottom: -60px;
+}
+.testimonals h2{
+    color: white;
+}
+.testimonals h4{
+    color: white;
+}
+.testimonals p{
+    color: white;
+}
+.testimonals .sub-heading{
+    color: white;
+}
+.testimonals .carousel-inner img{
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+    border: 3px solid plum;
+    padding: 5px;
+}
+.testimonals .carousel-item h2{
+    padding-top: 30px;
+}
+.testimonals .carousel-indicators li.active{
+    background-color: purple;
+}
+
+/* ---------------- Team Section ----------*/
+.team-area{
+    padding: 80px 0;
+}
+.teaxt-area .sub-heading{
+    margin-bottom: 50px;
+}
+.team-mate{
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    top: -50px;
+    overflow: hidden;
+    min-height: 200px;
+    height: 200px;
+    min-width: 200px;
+    width:200px;
+    border: 3px solid plum;
+    border-radius: 50%;
+}
+.team-mate img{
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    min-width: 100;
+    border-radius: 50%;
+}
+.team-title h3{
+    color: plum;
+    font-size: 20px;
+    font-weight: 700px;
 }
